@@ -1,0 +1,257 @@
+
+@font-face {
+	font-family: "Muli Sans";
+	src: url('../fonts/Muli.ttf') format('truetype');
+  }
+
+  @font-face {
+	font-family: "Muli Sans";
+	src: url('../fonts/Muli-ExtraLight.ttf') format('truetype');
+	font-weight: 300;
+  }
+
+  @font-face {
+	font-family: "Muli Sans";
+	src: url('../fonts/Muli-Light.ttf') format('truetype');
+	font-weight: 400;
+  }
+
+  @font-face {
+	font-family: "Muli Sans";
+	src: url('../fonts/Muli-SemiBold.ttf') format('truetype');
+	font-weight: 500;
+  }
+
+  @font-face {
+	font-family: "Muli Sans";
+	src: url('../fonts/Muli-Bold.ttf') format('truetype');
+	font-weight: 600;
+  }
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+  body{
+	font-family: "Muli Sans";
+	font-size: 100%;
+  }
+
+  .d-flex{
+	display:flex;
+  }
+
+  .custome-container{
+	width:100%;
+	padding:0 20px;
+  }
+
+  /* -----------------------Header Start-------------------------- */
+
+  .white-header{
+	background-color:#fff;
+	position: sticky;
+	z-index: 2;
+  }
+
+  .header-logo{
+	position: absolute;
+    background-color: #fff;
+    top: 10px;
+	border-radius: 100%;
+    box-shadow: 0px 0px 33px -20px;
+  }
+
+  .middle-header{
+	padding: 15px 0px;
+  }
+
+  .middle-header-links{
+	text-decoration: none;
+	gap:4px;
+	color: #353535;
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 1px solid #cccccc;
+  }
+
+  .middle-header-links:first-child{
+	border:none;
+  }
+
+  .middle-header-links:hover{
+	color:#f05d4d;
+	cursor: pointer;
+  }
+
+  .middle-header-links>i{
+	font-size: 24px;
+    font-family: auto;
+  }
+
+  .middle-header-links>span{
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: 500;
+  }
+
+.top-header{
+	padding: 5px 0px;
+}
+
+.top-header-contact{
+	color:#999999;
+	padding-right:7px;
+}
+
+.top-header>a{
+	text-decoration: none;
+	font-size: 13px;
+	color:#001e38;
+}
+
+.top-header-links{
+	margin-left:7px;
+	padding-left: 7px;
+	border-left: 1px solid #ccc;
+}
+
+.header-search-bar{
+	width:100%;
+	position:relative;
+}
+
+.header-search-bar>.global-search{
+	width:100%;
+	padding:5px 10px;
+	font-size: 14px;
+	height:34px; 
+	border:1px solid #ababab;             
+}
+
+.header-search-bar>.global-search-btn, .header-search-bar>.global-search-icon{
+	position:absolute;
+	right:0px;
+	width: 50px;
+	text-align: center;
+	height: 100%;
+	background-color:transparent;
+    border: 1px solid #f05d4d;
+	padding:5px 10px;
+}
+
+.header-search-bar>.global-search-icon{
+	background-color: #f05d4d;
+	color: #fff;
+	top: 50%;
+	transform: translateY(-50%);
+	vertical-align: middle;
+}
+
+  .bg-navbar{
+	background-color:#C88634;
+	padding:3px 3px;
+  }
+
+  .navbar>.navbar-collapse>.navbar-nav>.nav-item>.nav-link{
+	text-transform: uppercase;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link{
+	font-size: 13px;
+	color:#fff;
+  }
+
+  .badge{
+	background-color:#f05d4d;
+  }
+
+  .dropdown-menu{
+	font-size:13px;
+  }
+
+  .mega-menu-heading{
+	border-bottom:1px dotted #ccc;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+  }
+
+  .mega-menu-item{
+	color:#353535;
+	text-decoration: none;
+	font-size: 12px;
+  }
+
+  .dropdown-menu.mega-menu>.row>.col-md-3:nth-child(2){
+	background-color:#f9f9f9;
+  }
+
+  .dropdown-menu.mega-menu>.row>.col-md-3{
+	padding:15px 10px;
+  }
+
+  
+  @media all and (min-width: 992px) {
+	.dropdown-menu {
+		width: 13rem;
+	}
+	.mega-submenu {
+		left: 100%;
+		top: 0;
+		min-width: 25rem;
+	}
+	.ktm-mega-menu {
+		position: static;
+	}
+	.mega-menu {
+		left: 0;
+		right: 0;
+		width: 100%;
+		max-width:1200px;
+	}
+	.dropdown-menu li {
+		position: relative;
+	}
+	.dropdown-menu .submenu {
+		display: none;
+		left: 100%;
+		top: 0;
+	}
+	.dropdown-menu>li:hover>.submenu,
+	.dropdown:hover>.dropdown-menu {
+		display: block;
+	}
+}
+
+/* -----------------------End Header-------------------------- */
+
+
+.bg-banner-section video {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+}
+
+.bg-banner-section .fw-image-wrap img {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 600px;
+    width: 50%;
+}
+
+.bg-banner-section .fw-image-wrap {
+    background: url(../img/white-overlay.webp) repeat-x 0 100%;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+  
