@@ -565,7 +565,7 @@ a {
 	font-size:13px;
 	cursor: pointer;
 	-webkit-appearance:none;
-	width:120px;
+	width:160px;
 }
 
 .product-list-col{
@@ -641,16 +641,16 @@ color:#999999;
 	padding: 4px 40px 5px 20px;
 	color: white;
 	position: absolute;
-	left:-14px;
-	width: 100%;
+	left:-9.5px;
+	width: 103%;
 	font-size: 14px;
   }	
   .ribbon-pop:before {
 	height: 0;
 	width: 0;
-	border-top: 15px solid #623d0e;
-	border-left: 15px solid transparent;
-	bottom: -15px;
+	border-top: 10px solid #623d0e;
+	border-left: 10px solid transparent;
+	bottom: -10px;
 	position: absolute;
 	content: "";
 	left: 0;
@@ -663,7 +663,8 @@ color:#999999;
   }
 
   .dropdown-angle{
-	position:relative;
-	right:10px;
-	top:10px;
+	position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 14px;
   }
