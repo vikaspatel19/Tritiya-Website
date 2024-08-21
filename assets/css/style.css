@@ -1067,8 +1067,12 @@ color:#999999;
     margin: 0;
 }
 
+.product-image-thumbnail-slider .slick-slide{
+	padding:7px;
+}
+
 .product-details{
-    /* border: 1px solid #f0f0f0; */
+    border: 1px solid #f0f0f0;
     padding: 8px 16px 16px 16px;
 }
 
@@ -1116,16 +1120,104 @@ border-bottom: none;
 }
 
 .tritiya-promise-item>img{
-	width:15px;
+	width:16px;
+	margin-right: 5px;
 }
 
 .tritiya-promise-item{
 	font-size: 14px;
-}
-.tritiya-promise-item>img{
-	margin-right: 10px;
+	flex:0 0 32.5%;
+	padding:4px 3px;
 }
 
-.tritiya-promise-item>img{
-	margin-right: 10px;
+.tritiya-promises-bulets{
+	padding: 8px 16px 16px 16px;
+	background-color:#f9f9f9;
+	border: 1px solid #f0f0f0;
+}
+
+.tritiya-promise-item>a{
+	color:#f15d47;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.tritiya-promise-wraper{
+	display:flex;
+	gap:5px;
+	flex-wrap: wrap;
+}
+
+.authenticity-title{
+	text-align: center;
+    text-transform: uppercase;
+    color: #272b65;
+    font-weight: 700;
+    padding: 16px 0 10px 0;
+    font-size: 15px;
+	font-family: "domine";
+	margin-bottom: 10px;
+}
+
+.authenticity-text{
+	text-align: center;
+    padding-bottom: 12px;
+	font-size: 14px;
+	font-family: "domine";
+}
+
+.authenticity{
+	background-color: #9babc4;
+    border: 1px solid #f0f0f0;
+
+}
+
+.customer-speak-text{
+	width: 380px;
+    margin: auto;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 25px;
+}
+
+.customer-name{
+	padding-top: 20px;
+    display: block;
+}
+
+.customer-name:before{
+	display: block;
+    content: "";
+    margin: auto;
+    height: 1px;
+    background: #4476b2;
+    width: 60px;
+    position: relative;
+    top: -20px;
+}
+
+.customer-speak img{
+	width: auto;
+    margin: 10px auto;
+}
+
+.testimonials-wrap>.title-2{
+    color: #000;
+    font-weight: 600;
+    padding: 18px 0 14px 0;
+    margin: 0 25px;
+    letter-spacing: .15em;
+	font-size: 14px;
+    border-bottom: 1px solid #4476b2;
+    text-align: left;
+    font-family: Muli, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.testimonials-wrap{
+	background-color: #fff;
+    border: 1px solid #f0f0f0;
+    margin-top: 12px;
+    text-align: center;
+	width: 100%;
 }

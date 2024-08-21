@@ -60,3 +60,34 @@ window.addEventListener("resize", function() {
          // end if innerWidth
          });
          // DOMContentLoaded  end
+
+
+
+
+        //  ------------------------Slick Slider------------------------
+
+        $(document).ready(function(){
+                $(".customer-speak").slick({
+                        dots: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows:true
+                });
+
+
+                $('.product-image-slider').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        fade: true,
+                        asNavFor: '.product-image-thumbnail-slider'
+                      });
+                      $('.product-image-thumbnail-slider').slick({
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                        asNavFor: '.product-image-slider',
+                        dots: true,
+                        centerMode: false,
+                        focusOnSelect: true
+                      });
+        });

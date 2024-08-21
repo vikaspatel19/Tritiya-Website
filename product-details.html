@@ -10,6 +10,9 @@
    <!-- <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css"/> -->
    <link rel="stylesheet" href="assets/css/style.css">
 
+   <link rel="stylesheet" href="assets/slick/slick.css">
+   <link rel="stylesheet" href="assets/slick/slick-theme.css">
+
 </head>
 
 <body>
@@ -237,7 +240,37 @@
       <div class="container">
          <div class="row">
             <div class="col-md-6">
-               <img src="assets/img/ring.webp" width="100%">
+               <!-- <img src="assets/img/ring.webp" width="100%"> -->
+                <div class="product-image-slider">
+                  <img src="assets/img/ring2.webp" width="100%">
+                  <img src="assets/img/ring3.webp" width="100%">
+                  <img src="assets/img/ring4.webp" width="100%">
+                  <img src="assets/img/ring5.webp" width="100%">
+                  <img src="assets/img/ring6.webp" width="100%">
+                </div>
+                <div class="product-image-thumbnail-slider">
+                  <div>
+                     <img src="assets/img/ring2.webp" width="100%">
+                  </div>
+                  <div>
+                     <img src="assets/img/ring3.webp" width="100%">
+                  </div>
+                  <div>
+                     <img src="assets/img/ring4.webp" width="100%">
+                  </div>
+                  <div>
+                     <img src="assets/img/ring5.webp" width="100%">
+                  </div>
+                  <div>
+                     <img src="assets/img/ring6.webp" width="100%">
+                  </div>
+                  <div>
+                     <img src="assets/img/ring3.webp" width="100%">
+                  </div>
+                  <div>
+                     <img src="assets/img/ring4.webp" width="100%">
+                  </div>
+                </div>
             </div>
             <div class="col-md-6">
                <h1 class="product-details-productName">Bridal Ring Set</h1>
@@ -268,62 +301,65 @@
 
                </div>
 
-               <p class="short-description">Diamond PreSet Solitaire Ring In 18Kt Yellow Gold (4.35 gram) with Diamonds (0.2370 Ct) and Solitaire (0.15 Ct)</p>
+               <p class="short-description">Diamond PreSet Solitaire Ring In 18Kt Yellow Gold (4.35 gram) with Diamonds
+                  (0.2370 Ct) and Solitaire (0.15 Ct)</p>
                <div class="customization-options">
-               <div data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" class="collapsed customization d-flex justify-content-between"> 
-                  <div class="customize-product-title">
-                    <span class="closed-collapse"> Customize this product</span>
-                    <span class="opened-collapse"> Hide Customization</span>
-                  </div> 
-                  <div class="collapse-indicator">
-                     <div class="pluse">+</div>
-                     <div class="minuse">-</div>
+                  <div data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                     aria-controls="multiCollapseExample2"
+                     class="collapsed customization d-flex justify-content-between">
+                     <div class="customize-product-title">
+                        <span class="closed-collapse"> Customize this product</span>
+                        <span class="opened-collapse"> Hide Customization</span>
+                     </div>
+                     <div class="collapse-indicator">
+                        <div class="pluse">+</div>
+                        <div class="minuse">-</div>
+                     </div>
                   </div>
-               </div>
-               <div class="collapse multi-collapse" id="multiCollapseExample2">
-                  <div class="optons-wraper d-flex">
-                    <div class="customize-options bg-white">
-                        <select>
-                           <option>Yellow</option>
-                           <option>White</option>
-                           <option>Green</option>
-                        </select>
-                    </div>
-
-                    <div class="customize-options bg-white">
-                    <input type="radio" name="quality" value="18kt">
-                    <label>18kt</label>
-
-                    <input type="radio" name="quality" value="14kt">
-                    <label>14kt</label>
-                     </div>                 
-                  </div>
-                  <div class="customize-options mt-2 bg-white d-flex">
-                     <label>Solitaire :</label>
-                     <div class="d-flex">
-                        <div class="solitaire-options">
-                           <label class="customization-option-label">Caret</label>
+                  <div class="collapse multi-collapse" id="multiCollapseExample2">
+                     <div class="optons-wraper d-flex">
+                        <div class="customize-options bg-white">
                            <select>
-                              <option>0.15</option>
-                              <option>0.30</option>
-                              <option>0.50</option>
+                              <option>Yellow</option>
+                              <option>White</option>
+                              <option>Green</option>
                            </select>
                         </div>
-   
-                        <div class="solitaire-options">
-                           <label class="customization-option-label">Quality</label>
-                           <select>
-                              <option>SI IJ</option>
-                              <option>SI GH</option>
-                              <option>VS GH</option>
-                              <option>VVS EF</option>
-                           </select>
+
+                        <div class="customize-options bg-white">
+                           <input type="radio" name="quality" value="18kt">
+                           <label>18kt</label>
+
+                           <input type="radio" name="quality" value="14kt">
+                           <label>14kt</label>
                         </div>
                      </div>
-                    </div>
+                     <div class="customize-options mt-2 bg-white d-flex">
+                        <label>Solitaire :</label>
+                        <div class="d-flex">
+                           <div class="solitaire-options">
+                              <label class="customization-option-label">Caret</label>
+                              <select>
+                                 <option>0.15</option>
+                                 <option>0.30</option>
+                                 <option>0.50</option>
+                              </select>
+                           </div>
 
-                    
-                </div>
+                           <div class="solitaire-options">
+                              <label class="customization-option-label">Quality</label>
+                              <select>
+                                 <option>SI IJ</option>
+                                 <option>SI GH</option>
+                                 <option>VS GH</option>
+                                 <option>VVS EF</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+
+
+                  </div>
                </div>
 
                <div class="more-options d-flex mt-3">
@@ -451,10 +487,12 @@
                         <div class="product-detail-value">086176-36070269</div>
                      </div>
                   </div>
-                  <div data-bs-toggle="collapse" data-bs-target="#solitair-details" aria-expanded="false" aria-controls="multiCollapseExample2" class="product-details-accordion-title collapsed customization d-flex justify-content-between"> 
+                  <div data-bs-toggle="collapse" data-bs-target="#solitair-details" aria-expanded="false"
+                     aria-controls="multiCollapseExample2"
+                     class="product-details-accordion-title collapsed customization d-flex justify-content-between">
                      <div class=" ">
-                       <span class="product-details-title"> Solittair Details</span>
-                     </div> 
+                        <span class="product-details-title"> Solittair Details</span>
+                     </div>
                      <div class="collapse-indicator">
                         <div class="pluse">+</div>
                         <div class="minuse">-</div>
@@ -477,16 +515,109 @@
                         <div class="product-label">Product Code</div>
                         <div class="product-detail-value">086176-36070269</div>
                      </div>
-                       
-                   </div>
+
+                  </div>
+
+                  <div data-bs-toggle="collapse" data-bs-target="#more-details" aria-expanded="false"
+                     aria-controls="more-details"
+                     class="product-details-accordion-title collapsed customization d-flex justify-content-between">
+                     <div class=" ">
+                        <span class="product-details-title"> More Details</span>
+                     </div>
+                     <div class="collapse-indicator">
+                        <div class="pluse">+</div>
+                        <div class="minuse">-</div>
+                     </div>
+                  </div>
+
+                  <div class="collapse multi-collapse product-details-more" id="more-details">
+                     <div class="product-detail-row d-flex justify-content-between">
+                        <div class="product-label">Product Code</div>
+                        <div class="product-detail-value">086176-36070269</div>
+                     </div>
+                     <div class="product-detail-row d-flex justify-content-between">
+                        <div class="product-label">Product Code</div>
+                        <div class="product-detail-value">086176-36070269</div>
+                     </div>
+                     <div class="product-detail-row d-flex justify-content-between">
+                        <div class="product-label">Product Code</div>
+                        <div class="product-detail-value">086176-36070269</div>
+                     </div>
+                     <div class="product-detail-row d-flex justify-content-between">
+                        <div class="product-label">Product Code</div>
+                        <div class="product-detail-value">086176-36070269</div>
+                     </div>
+
+                  </div>
+               </div>
+               <div class="testimonials-wrap">
+                  <h3 class="title-2">Customer Speak</h3>
+                  <div class="customer-speak">
+                     <div class="text-center">
+                        <img src="assets/img/customer-image.webp">
+                        <p class="customer-speak-text">Thank you BlueStone for such a lovely collection and delivering it
+                           on time. Just loved the stuff gifted by my darling hubby.</p>
+
+                           <p class="customer-name">Manisha</p>
+                     </div>
+
+                     <div class="text-center">
+                        <img src="assets/img/customer-image.webp">
+                        <p class="customer-speak-text">Thank you BlueStone for such a lovely collection and delivering it
+                           on time. Just loved the stuff gifted by my darling hubby.</p>
+
+                           <p class="customer-name">Manisha</p>
+                     </div>
+                     <div class="text-center">
+                        <img src="assets/img/customer-image.webp">
+                        <p class="customer-speak-text">Thank you BlueStone for such a lovely collection and delivering it
+                           on time. Just loved the stuff gifted by my darling hubby.</p>
+
+                           <p class="customer-name">Manisha</p>
+                     </div>                  </div>
                </div>
             </div>
             <div class="col-md-5">
                <div class="tritiya-promises-bulets">
-                  <div class="tritiya-promise-item d-flex align-items-center">
-                     <img src="assets/img/support.svg">
-                     <a href="#"> 30 Day Returnable</a>
+                  <h3 class="product-details-title">Tritiya Promise</h3>
+                  <div class="tritiya-promise-wraper">
+                     <div class="tritiya-promise-item d-flex align-items-center">
+                        <img src="assets/img/return2.svg">
+                        <a href="#"> 30 Day Returnable</a>
+                     </div>
+
+                     <div class="tritiya-promise-item d-flex align-items-center">
+                        <img src="assets/img/support.svg">
+                        <a href="#"> Lifetime Exchange & Buy-Back Policy</a>
+                     </div>
+
+                     <div class="tritiya-promise-item d-flex align-items-center">
+                        <img src="assets/img/certified.svg">
+                        <a href="#"> Certified Jewellery</a>
+                     </div>
+
+                     <div class="tritiya-promise-item d-flex align-items-center">
+                        <img src="assets/img/like.svg">
+                        <a href="#"> 100% Refund</a>
+                     </div>
+
+                     <div class="tritiya-promise-item d-flex align-items-center">
+                        <img src="assets/img/free-shipping.svg">
+                        <a href="#"> Free Shipping</a>
+                     </div>
+
+                     <div class="tritiya-promise-item d-flex align-items-center">
+                        <img src="assets/img/heart.svg">
+                        <a href="#"> Free Returns</a>
+                     </div>
                   </div>
+               </div>
+               <div class="authenticity text-center mt-2">
+                  <p class="authenticity-title">Certificate of Authenticity</p>
+                  <p class="authenticity-text text-white">Every piece of jewellery that we<br>
+                     make is certified for authenticity by<br>
+                     third-party international laboratories<br>
+                     like SGL, IGI, BIS, GIA, and GSI.</p>
                </div>
             </div>
          </div>
@@ -603,9 +734,13 @@
          </div>
       </div>
    </section>
+
+   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script type="text/javascript" src="assets/slick/slick.min.js"></script>
    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js'></script> -->
    <script src="assets/js/bootstrap.min.js"></script>
-   <!-- <script  src="assets/js/script.js"></script> -->
+   <script src="assets/js/script.js"></script>
 
 </body>
 
