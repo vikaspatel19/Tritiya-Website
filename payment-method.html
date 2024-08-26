@@ -3,7 +3,7 @@
 
 <head>
    <meta charset="UTF-8">
-   <title>Tritiya - Cart</title>
+   <title>Tritiya - Payment Method</title>
    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'> -->
    <link href=" https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -230,7 +230,7 @@
    <section class="mt-4">
       <div class="container">
          <div class="breadcrumb">
-            <a href="index.html">Home</a> / Cart
+            <a href="index.html">Home</a> / <a href="cart.html">Cart</a> / <a href="delivery-details.html">Delivery Details</a> / Payment Method
          </div>
       </div>
    </section>
@@ -239,137 +239,64 @@
       <div class="container">
          <div class="row">
             <div class="col-md-8">
-               <p class="shopping-cart-title">My Shopping Cart <span>(2 Items)</span></p>
-               <div class="cart-banner">
-                  <img src="assets/img/cart-banner.webp" width="100%">
-               </div>
-
-               <div class="cart-product-details-wrap d-flex mt-4">
-                  <div class="cart-product-image">
-                     <img src="assets/img/cart-product.webp" width="100%">
-                  </div>
-                  <div class="cart-product-details">
-                     <div class="border">
-                        <div class="d-flex justify-content-between py-3 px-3">
-                           <div class="cart-product-name-price">
-                              <div class="cart-product-name"><a href="#">Yashashvi Om Ring</a></div>
-                              <div class="cart-product-code">Product Code: 002792-889568</div>
-                           </div>
-
-                           <div class="cart-product-price text-end">
-                              <strike>₹97,8013</strike>₹92,003
-                              <p class="cart-product-discounted-text">( 10% off on diamond price )
-                              </p>
-                           </div>
-                        </div>
-
-                        <div class="cart-selected-product-details d-flex">
-                           <div class="cart-product-label">Ring Size</div>
-                           <div class="cart-product-options">
-                              <select class="cart-product-select">
-                                 <option>6</option>
-                                 <option>7</option>
-                                 <option>8</option>
-                                 <option>9</option>
-                              </select>
-                              <select class="cart-product-select">
-                                 <option>Quantity 1</option>
-                                 <option>Quantity 2</option>
-                                 <option>Quantity 3</option>
-                                 <option>Quantity 4</option>
-                              </select>
-                           </div>
-                        </div>
-
-                        <div class="cart-selected-product-details d-flex mt-1 border-top">
-                           <div class="cart-product-label">Metal</div>
-                           <div class="cart-product-text">22KT Gold, 10.62 gram</div>
-                        </div>
+               <p class="shopping-cart-title">Choose a Payment Method</span></p>
+               <div class="d-flex align-items-start">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                           <button class="nav-link active text-start" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Card <br> Net Banking <br> UPI</button>
+                           <button class="nav-link text-start" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Cash on Delivery</button>
+                           </div>         
                      </div>
 
-                     <div class="cart-product-buttons-row">
-                        <a href="#">Remove</a>
-                        <a href="#">Move to Wishlist <span>(Need login first)</span></a>
+                     <div class="col-md-8">
+                        <div class="tab-content py-3 px-3 border" id="v-pills-tabContent">
+                           <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                              <p class="shopping-cart-title mb-2">Pay with Card, Net Banking or UPI</span></p>
+                              <div class="border-wrap"></div>
+                              <p>You'll be securely redirected to enter your Card, Net Banking or UPI details, and complete your purchase.</p>
+                              <button class="place-order-btn">Place Order</button>
+                           </div>
+                           <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                              <p class="shopping-cart-title mb-2">Pay using cash on delivery</span></p>
+                              <div class="border-wrap"></div>
+                              <p>Due to restriction on Cash On Delivery (COD) amount collection by our delivery partners, we can only accept a maximum of ₹25,000 for COD. Please prepay the balance amount.</p>
+                              <div class="row">
+                                 <div class="col-md-7">
+                                    <div class="form-group position-relative">
+                                       <input type="text" class="form-control custome-input" placeholder="Enter cash amount" value="25,ooo">
+                                       <div class="input-icon">
+                                          ₹
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-5">
+                                    <button class="place-order-btn mt-0">Pay ₹ 25,000</button>  
+                                 </div>
+                              </div>
+                           </div>
+                           </div>
                      </div>
                   </div>
-               </div>
 
-               <div class="cart-product-promise-wrap d-flex mt-4">
-                  <div class="cart-promise-box text-center">
-                     <i class="bi bi-check-circle-fill"></i> 30-Day Returnable
-                  </div>
-                  <div class="cart-promise-box text-center">
-                     <i class="bi bi-check-circle-fill"></i> Eligible for Lifetime exchange & Buy back
-                  </div>
-                  <div class="cart-promise-box text-center">
-                     <i class="bi bi-check-circle-fill"></i> Free & Insured Delivery
-                  </div>
-               </div>
-
-               <div class="cart-product-details-wrap d-flex mt-4">
-                  <div class="cart-product-image">
-                     <img src="assets/img/cart-product2.webp" width="100%">
-                  </div>
-                  <div class="cart-product-details">
-                     <div class="border">
-                        <div class="d-flex justify-content-between py-3 px-3">
-                           <div class="cart-product-name-price">
-                              <div class="cart-product-name"><a href="#">Yashashvi Om Ring</a></div>
-                              <div class="cart-product-code">Product Code: 002792-889568</div>
-                           </div>
-
-                           <div class="cart-product-price text-end">
-                              <strike>₹97,8013</strike>₹92,003
-                              <p class="cart-product-discounted-text">( 10% off on diamond price )
-                              </p>
-                           </div>
-                        </div>
-
-                        <div class="cart-selected-product-details d-flex">
-                           <div class="cart-product-label">Ring Size</div>
-                           <div class="cart-product-options">
-                              <select class="cart-product-select">
-                                 <option>6</option>
-                                 <option>7</option>
-                                 <option>8</option>
-                                 <option>9</option>
-                              </select>
-                              <select class="cart-product-select">
-                                 <option>Quantity 1</option>
-                                 <option>Quantity 2</option>
-                                 <option>Quantity 3</option>
-                                 <option>Quantity 4</option>
-                              </select>
-                           </div>
-                        </div>
-
-                        <div class="cart-selected-product-details d-flex mt-1 border-top">
-                           <div class="cart-product-label">Metal</div>
-                           <div class="cart-product-text">22KT Gold, 10.62 gram</div>
-                        </div>
-                     </div>
-
-                     <div class="cart-product-buttons-row">
-                        <a href="#">Remove</a>
-                        <a href="#">Move to Wishlist <span>(Need login first)</span></a>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="cart-product-promise-wrap d-flex mt-4">
-                  <div class="cart-promise-box text-center">
-                     <i class="bi bi-check-circle-fill"></i> 30-Day Returnable
-                  </div>
-                  <div class="cart-promise-box text-center">
-                     <i class="bi bi-check-circle-fill"></i> Eligible for Lifetime exchange & Buy back
-                  </div>
-                  <div class="cart-promise-box text-center">
-                     <i class="bi bi-check-circle-fill"></i> Free & Insured Delivery
-                  </div>
                </div>
             </div>
-
             <div class="col-md-4">
+               <div class="delivering-detail">
+                  <div class="delivering-details-box">
+                     Delivering to <strong>401209</strong>
+                  </div>
+
+                  <div class="delivering-details-box d-flex justify-content-between">
+                     <div class="estimated-delivery-label">
+                        <i class="bi bi-truck"></i> Estimated Delivery
+                     </div>
+
+                     <div class="estimated-delivery-view">
+                        View
+                     </div>
+                  </div>
+               </div>
                <div class="cart-order-summery">
                   <h2 class="cart-order-summery-title">Order Summery</h2>
                   <div class="cart-total-items d-flex justify-content-between">
@@ -383,11 +310,6 @@
                   </div>
 
                   <p class="cart-save-text">You Save ₹ 537</p>
-
-                  <div class="cart-gift-msg d-flex justify-content-between">
-                     <p class="cart-gift-msg-lable">Gift Message <br> (Optional)</p>
-                     <a href="#"><i class="bi bi-gift"></i> Add</a>
-                  </div>
 
                   <a href="delivery-details.html"><button class="place-order-btn">Place Order</button></a>
 
