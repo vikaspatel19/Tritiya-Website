@@ -67,6 +67,41 @@ window.addEventListener("resize", function() {
         //  ------------------------Slick Slider------------------------
 
         $(document).ready(function(){
+                $(".home-page-category").slick({
+                        dots: true,
+                        slidesToShow: 8,
+                        slidesToScroll: 1,
+                        arrows:false,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        responsive: [
+                                {
+                                    breakpoint: 1024,
+                                    settings: {
+                                        slidesToShow: 5,
+                                        slidesToScroll: 1,
+                                    }
+                                },
+                                {
+                                    breakpoint: 600,
+                                    settings: {
+                                        slidesToShow: 4,
+                                        slidesToScroll: 1
+                                    }
+                                },
+                                {
+                                    breakpoint: 480,
+                                    settings: {
+                                        slidesToShow: 3,
+                                        slidesToScroll: 1
+                                    }
+                                }
+                        
+                          ]
+                });    
+        })
+
+        $(document).ready(function(){
                 $(".customer-speak").slick({
                         dots: true,
                         slidesToShow: 1,
@@ -81,15 +116,15 @@ window.addEventListener("resize", function() {
                         arrows: false,
                         fade: true,
                         asNavFor: '.product-image-thumbnail-slider'
-                      });
-                      $('.product-image-thumbnail-slider').slick({
+                        });
+                        $('.product-image-thumbnail-slider').slick({
                         slidesToShow: 5,
                         slidesToScroll: 1,
                         asNavFor: '.product-image-slider',
                         dots: true,
                         centerMode: false,
                         focusOnSelect: true
-                      });
+                        });
         });
 
 

@@ -342,6 +342,7 @@ a {
 	.dropdown-menu>li:hover>.submenu,
 	.dropdown:hover>.dropdown-menu {
 		display: block;
+		margin: auto;
 	}
 }
 
@@ -1069,6 +1070,10 @@ color:#999999;
 
 .product-image-thumbnail-slider .slick-slide{
 	padding:7px;
+}
+
+.slick-prev:before, .slick-next:before{
+	color: rgb(0 0 0 / 50%)!important;
 }
 
 /* -----------------Product image zoom------------------------------*/
