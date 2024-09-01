@@ -245,26 +245,32 @@
                      <h5 class="mb-0">Contact Us</h5>
                </div>
                <div class="card-body">
-                  <p class="mb-3"><strong>Corporate Sales</strong></p>
+                  <p class="mb-2"><strong>Corporate Sales</strong></p>
                   <p class="mb-2 contact-details"> <i class="bi bi-telephone-fill"></i> 18004190066 (Call us at at 9 am-10 pm, 7 days a week)</p>
                   <p class="contact-details"> <i class="bi bi-envelope-fill"></i> Support@example.com</p>
 
-                  <p class="mb-3"><strong>Corporate Sales</strong></p>
+                  <div class="border-bottom w-100 mt-2 mb-2"></div>
+
+                  <p class="mb-2"><strong>Office Address</strong></p>
+                  <p class="contact-details contact-details-address">
+                     <img src="assets/img/maps-and-flags.png" width="15px">
+                     No 89/2, Munnekolala, Marathalli Outer Ring Road, Marathahalli, Bangalore 560037, Karnataka, India
+                  </p>
+
+                  <p class="mb-2"><strong>Head Office Address</strong></p>
+
+                  <p class="contact-details contact-details-address">
+                     <img src="assets/img/maps-and-flags.png" width="15px">
+                     No 89/2, Munnekolala, Marathalli Outer Ring Road, Marathahalli, Bangalore 560037, Karnataka, India
+                  </p>
+
+                  <div class="border-bottom w-100 mt-2 mb-2"></div>
+
+                  <p class="mb-2"><strong>Corporate Sales</strong></p>
                   <ul class="contact-details">
                      <li>For all corporate sales related queries please write to us at corporate.sales@example.com</li>
                      <li>For bulk enquiries or sales associations please contact sales@example.com</li>
                   </ul>
-
-                  <p class="mb-3"><strong>Office Address</strong></p>
-                  <p class="contact-details contact-details-address">
-                     <i class="bi bi-pin-fill"></i>
-                     No 89/2, Munnekolala, Marathalli Outer Ring Road, Marathahalli, Bangalore 560037, Karnataka, India
-                  </p>
-
-                  <p class="contact-details contact-details-address">
-                     <i class="bi bi-pin-fill"></i>
-                     No 89/2, Munnekolala, Marathalli Outer Ring Road, Marathahalli, Bangalore 560037, Karnataka, India
-                  </p>
                   
                </div>
             </div>
@@ -287,13 +293,23 @@
                      </div>
                      <div class="form-group mb-3">
                         <label class="contact-name mb-2">Phone</label>
-                        <input type="text" class="form-control" placeholder="Enter your phone No.">
+                        <div class="row">
+                           <div class="col-2 pe-0">
+                              <input type="type" class="form-control contact-prefix" placeholder="+91">
+                           </div>
+                           <div class="col-10 ps-0">
+                              <input type="text" class="form-control contact-input" placeholder="Enter your phone No.">
+                           </div>
+                        </div>
+                        <!-- <input type="text" class="form-control" placeholder="Enter your phone No."> -->
                      </div>
+
+
                      <div class="form-group mb-3">
                         <label class="contact-name mb-2">Message</label>
                         <textarea class="form-control"></textarea>
                      </div>
-                     <input type="submit" class="btn btn-tritiya w-100 text-uppercase" value="Sabmit">
+                     <input type="submit" class="btn btn-tritiya w-100 text-uppercase" value="Submit">
                   </form>
                   
                </div>
@@ -314,6 +330,9 @@
                      <ul class="footer-menu">
                         <li class="footer-nav">
                            <a href="about-us.html">Who we are?</a>
+                        </li>
+                        <li class="footer-nav">
+                           <a href="contact.html">Contact</a>
                         </li>
                         <li class="footer-nav">
                            <a href="contact.html">Contact</a>
