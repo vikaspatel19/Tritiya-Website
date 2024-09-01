@@ -3,6 +3,7 @@
 
 <head>
    <meta charset="UTF-8">
+   <meta content="width=device-width, initial-scale=1.0" name="viewport">
    <title>Tritiya - Product List</title>
    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'> -->
    <link href=" https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
@@ -88,11 +89,6 @@
                            <li>
                               <a class="dropdown-item" href="#"> Band<strong class="float-end">&raquo;</strong> </a>
                               <div class="submenu dropdown-menu mega-submenu p-3">
-                                 <!-- <span>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                 </span> -->
                               </div>
                            </li>
                            <li><a class="dropdown-item" href="#">Pin </a></li>
@@ -251,17 +247,17 @@
    </section>
 
    <section class="filter-row mt-4">
-      <div class="custome-container bg-gray">
+      <div class="custome-container">
          <div class="filters-actions">
             <div class="row align-items-center">
-               <div class="col-md-7">
+               <div class="col-md-6 col-12">
                   <div class="filters-btn-row ">
                      <a href="#" class="btn btn-tritiya-active text-uppercase">All</a>
                      <a href="#" class="btn btn-white outline text-uppercase">Try at home</a>
                      <a href="#" class="btn btn-white outline text-uppercase">Design in store</a>
                   </div>
                </div>
-               <div class="col-md-5 text-end">
+               <div class="col-md-6 col-6 text-end d-none d-md-block">
                   <div class="shorting-wraper position-relative">
                      <select class="shorting-option">
                      <option>Whats New</option>
@@ -271,237 +267,241 @@
                      <option>Discount</option>
                      </select>
                      <i class="bi bi-chevron-down dropdown-angle"></i>
-                  </div>
-                  
+                  </div>                  
                </select>
                </div>
+               <!-- <div class="col-md-4 col-6 text-end d-block d-md-none">
+                  <i class="bi bi-filter"></i> Filter
+               </div> -->
             </div>
          </div>
       </div>
    </section>
 
    <section class="product-list-area mt-4">
-      <div class="custome-container row">
-         <div class="filter-sidebar">
-            <p class="fitersidebar-heading text-uppercase">Filters</p>
-            <div class="filter-sidebar-wraper">
-               <p class="filter-title"><strong>Price</strong></p>
-               <div class="mb-2 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Below Rs.10,0000 (43)</label>
+      <div class="custome-container">
+         <div class="row">
+            <div class="col-md-3 filter-sidebar">
+               <p class="fitersidebar-heading text-uppercase">Filters</p>
+               <div class="filter-sidebar-wraper">
+                  <p class="filter-title"><strong>Price</strong></p>
+                  <div class="mb-2 form-check">
+                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                     <label class="form-check-label" for="exampleCheck1">Below Rs.10,0000 (43)</label>
+                  </div>
+                  <div class="mb-2 form-check">
+                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                     <label class="form-check-label" for="exampleCheck1">Rs.10,0000 - 20,000 (5)</label>
+                  </div>
+   
+                  <div class="divider"></div>
+   
+                  <p class="filter-title"><strong>Type</strong></p>
+                  <div class="mb-2 form-check">
+                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                     <label class="form-check-label" for="exampleCheck1">Earring (17)</label>
+                  </div>
+                  <div class="mb-2 form-check">
+                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                     <label class="form-check-label" for="exampleCheck1">Rings (17)</label>
+                  </div>
+   
+                  <div class="mb-2 form-check">
+                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                     <label class="form-check-label" for="exampleCheck1">Pendants (17)</label>
+                  </div>
+   
+                  <div class="mb-2 form-check">
+                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                     <label class="form-check-label" for="exampleCheck1">Necklaces (17)</label>
+                  </div>
+   
+                  <div class="mb-2 form-check">
+                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                     <label class="form-check-label" for="exampleCheck1">Bracelaces (17)</label>
+                  </div>
+   
+                  <div class="mb-2 form-check">
+                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                     <label class="form-check-label" for="exampleCheck1">Watch (17)</label>
+                  </div>
+   
                </div>
-               <div class="mb-2 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Rs.10,0000 - 20,000 (5)</label>
-               </div>
-
-               <div class="divider"></div>
-
-               <p class="filter-title"><strong>Type</strong></p>
-               <div class="mb-2 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Earring (17)</label>
-               </div>
-               <div class="mb-2 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Rings (17)</label>
-               </div>
-
-               <div class="mb-2 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Pendants (17)</label>
-               </div>
-
-               <div class="mb-2 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Necklaces (17)</label>
-               </div>
-
-               <div class="mb-2 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Bracelaces (17)</label>
-               </div>
-
-               <div class="mb-2 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Watch (17)</label>
-               </div>
-
             </div>
-         </div>
-         <div class="product-list-col">
-            <div class="row">
-               <div class="col-md-4">
-                  <div class="product-list-thumb position-relative">
-                     <div class="ribbon-pop">Up to 30000 Scholorships</div>
-                     <a href="product-details.html">
-                        <video class="hoverd" data-vpid="70000" width="100%"
-                           height="auto"
-                           src="https://kinvid1.bluestone.com/output/mp4/BIMG0653C27-VIDEO-50115.mp4/BIMG0653C27-VIDEO-50115.mp4"
-                           poster="https://kinclimg8.bluestone.com/f_webp,c_scale,w_515,b_rgb:f0f0f0/giproduct/BIMG0653C27-POSTER-50115.jpg"
-                           loop="true" muted="" autoplay="true" data-gtm-vis-first-on-screen195355_246="7398501">
-                           <source src="undefined" type="video/mp4">
-                        </video>
-                        <img src="assets/img/ring2.webp" width="100%" class="unhoverd">
-                        <p class="product-name mb-0">The Nomi Bridal Ring Set</p>
-                        <div class="d-flex justify-content-between align-items-center product-values">
-                           <div class="product-price">
-                              <span class="selling-price">Rs. 73,606</span>
-                              <strike class="mrp-price">Rs. 77,481</strike>
+            <div class="col-md-9 product-list-col">
+               <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                     <div class="product-list-thumb position-relative">
+                        <div class="ribbon-pop">Up to 10% Discount</div>
+                        <a href="product-details.html">
+                           <video class="hoverd" data-vpid="70000" width="100%"
+                              height="auto"
+                              src="https://kinvid1.bluestone.com/output/mp4/BIMG0653C27-VIDEO-50115.mp4/BIMG0653C27-VIDEO-50115.mp4"
+                              poster="https://kinclimg8.bluestone.com/f_webp,c_scale,w_515,b_rgb:f0f0f0/giproduct/BIMG0653C27-POSTER-50115.jpg"
+                              loop="true" muted="" autoplay="true" data-gtm-vis-first-on-screen195355_246="7398501">
+                              <source src="undefined" type="video/mp4">
+                           </video>
+                           <img src="assets/img/ring2.webp" width="100%" class="unhoverd">
+                           <p class="product-name mb-0">The Nomi Bridal Ring Set</p>
+                           <div class="d-flex justify-content-between align-items-center product-values">
+                              <div class="product-price">
+                                 <span class="selling-price">Rs. 73,606</span>
+                                 <strike class="mrp-price">Rs. 77,481</strike>
+                              </div>
+   
+                              <div class="save-value">
+                                 Save <span class="save-amount">Rs. 3,875</span>
+                              </div>
                            </div>
-
-                           <div class="save-value">
-                              Save <span class="save-amount">Rs. 3,875</span>
-                           </div>
+                        </a>
+                        <div class="wishlist-wraper">
+                           <a href="#"><i class="bi bi-heart"></i></a>
                         </div>
-                     </a>
-                     <div class="wishlist-wraper">
-                        <a href="#"><i class="bi bi-heart"></i></a>
                      </div>
                   </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="product-list-thumb position-relative">
-                     <div class="ribbon-pop">Up to 30000 Scholorships</div>
-                     <a href="#">
-                        <video class="hoverd" data-vpid="70000" width="100%"
-                           height="auto"
-                           src="https://kinvid1.bluestone.com/output/mp4/BIMG0653C27-VIDEO-50115.mp4/BIMG0653C27-VIDEO-50115.mp4"
-                           poster="https://kinclimg8.bluestone.com/f_webp,c_scale,w_515,b_rgb:f0f0f0/giproduct/BIMG0653C27-POSTER-50115.jpg"
-                           loop="true" muted="" autoplay="true" data-gtm-vis-first-on-screen195355_246="7398501">
-                           <source src="undefined" type="video/mp4">
-                        </video>
-                        <img src="assets/img/ring2.webp" width="100%" class="unhoverd">
-                        <p class="product-name mb-0">The Nomi Bridal Ring Set</p>
-                        <div class="d-flex justify-content-between align-items-center product-values">
-                           <div class="product-price">
-                              <span class="selling-price">Rs. 73,606</span>
-                              <strike class="mrp-price">Rs. 77,481</strike>
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                     <div class="product-list-thumb position-relative">
+                        <div class="ribbon-pop">Up to 10% Discount</div>
+                        <a href="#">
+                           <video class="hoverd" data-vpid="70000" width="100%"
+                              height="auto"
+                              src="https://kinvid1.bluestone.com/output/mp4/BIMG0653C27-VIDEO-50115.mp4/BIMG0653C27-VIDEO-50115.mp4"
+                              poster="https://kinclimg8.bluestone.com/f_webp,c_scale,w_515,b_rgb:f0f0f0/giproduct/BIMG0653C27-POSTER-50115.jpg"
+                              loop="true" muted="" autoplay="true" data-gtm-vis-first-on-screen195355_246="7398501">
+                              <source src="undefined" type="video/mp4">
+                           </video>
+                           <img src="assets/img/ring2.webp" width="100%" class="unhoverd">
+                           <p class="product-name mb-0">The Nomi Bridal Ring Set</p>
+                           <div class="d-flex justify-content-between align-items-center product-values">
+                              <div class="product-price">
+                                 <span class="selling-price">Rs. 73,606</span>
+                                 <strike class="mrp-price">Rs. 77,481</strike>
+                              </div>
+   
+                              <div class="save-value">
+                                 Save <span class="save-amount">Rs. 3,875</span>
+                              </div>
                            </div>
-
-                           <div class="save-value">
-                              Save <span class="save-amount">Rs. 3,875</span>
-                           </div>
+                        </a>
+                        <div class="wishlist-wraper">
+                           <a href="#"><i class="bi bi-heart-fill"></i></a>
                         </div>
-                     </a>
-                     <div class="wishlist-wraper">
-                        <a href="#"><i class="bi bi-heart-fill"></i></a>
                      </div>
                   </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="product-list-thumb position-relative">
-                     <div class="ribbon-pop">Up to 30000 Scholorships</div>
-                     <a href="#">
-                        <video class="unhoverd" data-vpid="70000" width="100%"
-                           height="auto"
-                           src="https://kinvid1.bluestone.com/output/mp4/BIMG0653C27-VIDEO-50115.mp4/BIMG0653C27-VIDEO-50115.mp4"
-                           poster="https://kinclimg8.bluestone.com/f_webp,c_scale,w_515,b_rgb:f0f0f0/giproduct/BIMG0653C27-POSTER-50115.jpg"
-                           loop="true" muted="" autoplay="true" data-gtm-vis-first-on-screen195355_246="7398501">
-                           <source src="undefined" type="video/mp4">
-                        </video>
-                        <img src="assets/img/ring2.webp" width="100%" class="hoverd">
-                        <p class="product-name mb-0">The Nomi Bridal Ring Set</p>
-                        <div class="d-flex justify-content-between align-items-center product-values">
-                           <div class="product-price">
-                              <span class="selling-price">Rs. 73,606</span>
-                              <strike class="mrp-price">Rs. 77,481</strike>
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                     <div class="product-list-thumb position-relative">
+                        <div class="ribbon-pop">Up to 10% Discount</div>
+                        <a href="#">
+                           <video class="unhoverd" data-vpid="70000" width="100%"
+                              height="auto"
+                              src="https://kinvid1.bluestone.com/output/mp4/BIMG0653C27-VIDEO-50115.mp4/BIMG0653C27-VIDEO-50115.mp4"
+                              poster="https://kinclimg8.bluestone.com/f_webp,c_scale,w_515,b_rgb:f0f0f0/giproduct/BIMG0653C27-POSTER-50115.jpg"
+                              loop="true" muted="" autoplay="true" data-gtm-vis-first-on-screen195355_246="7398501">
+                              <source src="undefined" type="video/mp4">
+                           </video>
+                           <img src="assets/img/ring2.webp" width="100%" class="hoverd">
+                           <p class="product-name mb-0">The Nomi Bridal Ring Set</p>
+                           <div class="d-flex justify-content-between align-items-center product-values">
+                              <div class="product-price">
+                                 <span class="selling-price">Rs. 73,606</span>
+                                 <strike class="mrp-price">Rs. 77,481</strike>
+                              </div>
+   
+                              <div class="save-value">
+                                 Save <span class="save-amount">Rs. 3,875</span>
+                              </div>
                            </div>
-
-                           <div class="save-value">
-                              Save <span class="save-amount">Rs. 3,875</span>
-                           </div>
+                        </a>
+                        <div class="wishlist-wraper">
+                           <a href="#"><i class="bi bi-heart"></i></a>
                         </div>
-                     </a>
-                     <div class="wishlist-wraper">
-                        <a href="#"><i class="bi bi-heart"></i></a>
                      </div>
                   </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="product-list-thumb position-relative">
-                     <div class="ribbon-pop">Up to 30000 Scholorships</div>
-                     <a href="#">
-                        <video class="unhoverd" data-vpid="70000" width="100%"
-                           height="auto"
-                           src="https://kinvid1.bluestone.com/output/mp4/BIMG0653C27-VIDEO-50115.mp4/BIMG0653C27-VIDEO-50115.mp4"
-                           poster="https://kinclimg8.bluestone.com/f_webp,c_scale,w_515,b_rgb:f0f0f0/giproduct/BIMG0653C27-POSTER-50115.jpg"
-                           loop="true" muted="" autoplay="true" data-gtm-vis-first-on-screen195355_246="7398501">
-                           <source src="undefined" type="video/mp4">
-                        </video>
-                        <img src="assets/img/ring2.webp" width="100%" class="hoverd">
-                        <p class="product-name mb-0">The Nomi Bridal Ring Set</p>
-                        <div class="d-flex justify-content-between align-items-center product-values">
-                           <div class="product-price">
-                              <span class="selling-price">Rs. 73,606</span>
-                              <strike class="mrp-price">Rs. 77,481</strike>
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                     <div class="product-list-thumb position-relative">
+                        <div class="ribbon-pop">Up to 10% Discount</div>
+                        <a href="#">
+                           <video class="unhoverd" data-vpid="70000" width="100%"
+                              height="auto"
+                              src="https://kinvid1.bluestone.com/output/mp4/BIMG0653C27-VIDEO-50115.mp4/BIMG0653C27-VIDEO-50115.mp4"
+                              poster="https://kinclimg8.bluestone.com/f_webp,c_scale,w_515,b_rgb:f0f0f0/giproduct/BIMG0653C27-POSTER-50115.jpg"
+                              loop="true" muted="" autoplay="true" data-gtm-vis-first-on-screen195355_246="7398501">
+                              <source src="undefined" type="video/mp4">
+                           </video>
+                           <img src="assets/img/ring2.webp" width="100%" class="hoverd">
+                           <p class="product-name mb-0">The Nomi Bridal Ring Set</p>
+                           <div class="d-flex justify-content-between align-items-center product-values">
+                              <div class="product-price">
+                                 <span class="selling-price">Rs. 73,606</span>
+                                 <strike class="mrp-price">Rs. 77,481</strike>
+                              </div>
+   
+                              <div class="save-value">
+                                 Save <span class="save-amount">Rs. 3,875</span>
+                              </div>
                            </div>
-
-                           <div class="save-value">
-                              Save <span class="save-amount">Rs. 3,875</span>
-                           </div>
+                        </a>
+                        <div class="wishlist-wraper">
+                           <a href="#"><i class="bi bi-heart"></i></a>
                         </div>
-                     </a>
-                     <div class="wishlist-wraper">
-                        <a href="#"><i class="bi bi-heart"></i></a>
                      </div>
                   </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="product-list-thumb position-relative">
-                     <div class="ribbon-pop">Up to 30000 Scholorships</div>
-                     <a href="#">
-                        <video class="unhoverd" data-vpid="70000" width="100%"
-                           height="auto"
-                           src="https://kinvid1.bluestone.com/output/mp4/BIMG0653C27-VIDEO-50115.mp4/BIMG0653C27-VIDEO-50115.mp4"
-                           poster="https://kinclimg8.bluestone.com/f_webp,c_scale,w_515,b_rgb:f0f0f0/giproduct/BIMG0653C27-POSTER-50115.jpg"
-                           loop="true" muted="" autoplay="true" data-gtm-vis-first-on-screen195355_246="7398501">
-                           <source src="undefined" type="video/mp4">
-                        </video>
-                        <img src="assets/img/ring2.webp" width="100%" class="hoverd">
-                        <p class="product-name mb-0">The Nomi Bridal Ring Set</p>
-                        <div class="d-flex justify-content-between align-items-center product-values">
-                           <div class="product-price">
-                              <span class="selling-price">Rs. 73,606</span>
-                              <strike class="mrp-price">Rs. 77,481</strike>
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                     <div class="product-list-thumb position-relative">
+                        <div class="ribbon-pop">Up to 10% Discount</div>
+                        <a href="#">
+                           <video class="unhoverd" data-vpid="70000" width="100%"
+                              height="auto"
+                              src="https://kinvid1.bluestone.com/output/mp4/BIMG0653C27-VIDEO-50115.mp4/BIMG0653C27-VIDEO-50115.mp4"
+                              poster="https://kinclimg8.bluestone.com/f_webp,c_scale,w_515,b_rgb:f0f0f0/giproduct/BIMG0653C27-POSTER-50115.jpg"
+                              loop="true" muted="" autoplay="true" data-gtm-vis-first-on-screen195355_246="7398501">
+                              <source src="undefined" type="video/mp4">
+                           </video>
+                           <img src="assets/img/ring2.webp" width="100%" class="hoverd">
+                           <p class="product-name mb-0">The Nomi Bridal Ring Set</p>
+                           <div class="d-flex justify-content-between align-items-center product-values">
+                              <div class="product-price">
+                                 <span class="selling-price">Rs. 73,606</span>
+                                 <strike class="mrp-price">Rs. 77,481</strike>
+                              </div>
+   
+                              <div class="save-value">
+                                 Save <span class="save-amount">Rs. 3,875</span>
+                              </div>
                            </div>
-
-                           <div class="save-value">
-                              Save <span class="save-amount">Rs. 3,875</span>
-                           </div>
+                        </a>
+                        <div class="wishlist-wraper">
+                           <a href="#"><i class="bi bi-heart"></i></a>
                         </div>
-                     </a>
-                     <div class="wishlist-wraper">
-                        <a href="#"><i class="bi bi-heart"></i></a>
                      </div>
                   </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="product-list-thumb position-relative">
-                     <div class="ribbon-pop">Up to 30000 Scholorships</div>
-                     <a href="#">
-                        <video class="unhoverd" data-vpid="70000" width="100%"
-                           height="auto"
-                           src="https://kinvid1.bluestone.com/output/mp4/BIMG0653C27-VIDEO-50115.mp4/BIMG0653C27-VIDEO-50115.mp4"
-                           poster="https://kinclimg8.bluestone.com/f_webp,c_scale,w_515,b_rgb:f0f0f0/giproduct/BIMG0653C27-POSTER-50115.jpg"
-                           loop="true" muted="" autoplay="true" data-gtm-vis-first-on-screen195355_246="7398501">
-                           <source src="undefined" type="video/mp4">
-                        </video>
-                        <img src="assets/img/ring2.webp" width="100%" class="hoverd">
-                        <p class="product-name mb-0">The Nomi Bridal Ring Set</p>
-                        <div class="d-flex justify-content-between align-items-center product-values">
-                           <div class="product-price">
-                              <span class="selling-price">Rs. 73,606</span>
-                              <strike class="mrp-price">Rs. 77,481</strike>
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                     <div class="product-list-thumb position-relative">
+                        <div class="ribbon-pop">Up to 10% Discount</div>
+                        <a href="#">
+                           <video class="unhoverd" data-vpid="70000" width="100%"
+                              height="auto"
+                              src="https://kinvid1.bluestone.com/output/mp4/BIMG0653C27-VIDEO-50115.mp4/BIMG0653C27-VIDEO-50115.mp4"
+                              poster="https://kinclimg8.bluestone.com/f_webp,c_scale,w_515,b_rgb:f0f0f0/giproduct/BIMG0653C27-POSTER-50115.jpg"
+                              loop="true" muted="" autoplay="true" data-gtm-vis-first-on-screen195355_246="7398501">
+                              <source src="undefined" type="video/mp4">
+                           </video>
+                           <img src="assets/img/ring2.webp" width="100%" class="hoverd">
+                           <p class="product-name mb-0">The Nomi Bridal Ring Set</p>
+                           <div class="d-flex justify-content-between align-items-center product-values">
+                              <div class="product-price">
+                                 <span class="selling-price">Rs. 73,606</span>
+                                 <strike class="mrp-price">Rs. 77,481</strike>
+                              </div>
+   
+                              <div class="save-value">
+                                 Save <span class="save-amount">Rs. 3,875</span>
+                              </div>
                            </div>
-
-                           <div class="save-value">
-                              Save <span class="save-amount">Rs. 3,875</span>
-                           </div>
+                        </a>
+                        <div class="wishlist-wraper">
+                           <a href="#"><i class="bi bi-heart"></i></a>
                         </div>
-                     </a>
-                     <div class="wishlist-wraper">
-                        <a href="#"><i class="bi bi-heart"></i></a>
                      </div>
                   </div>
                </div>
