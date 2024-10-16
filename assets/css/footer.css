@@ -1,0 +1,135 @@
+/* ---------------------Footer------------------------------- */
+.footer{
+	background-color:#140b00;
+	padding:30px 0px;
+}
+
+.footer-column-header{
+	color:#f2f2f2;
+	text-transform: uppercase;
+}
+
+.footer-menu{
+	list-style: none;
+	padding-left:0px;
+}
+
+.footer-menu>.footer-nav>a{
+	color:#ccc;
+	font-size:13px;
+}
+
+.footer-bottom{
+	background-color:#140b00;
+	border-top:1px solid #242323;
+	padding: 20px 0px;
+}
+
+.footer-para{
+	font-size: 13px;
+	color: #ccc;
+}
+
+.subscription-box{
+	display:flex;
+}
+
+.subs-btn{
+	font-size: 13px;
+    padding: 5px 8px;
+	background-color:#C88634;
+	border:1px solid #C88634;
+	color:#fff;
+	border-radius:0px 2px 2px 0px;
+}
+
+.subs-input{
+	border:1px solid #ccc;
+	border-radius: 2px 0px 0px 2px;
+}
+
+.social-media-links{
+	display: flex;
+	gap:15px;
+	justify-content: center;	
+}
+
+.social-media-links>a{
+	color:#fff;
+}
+.copyrights-box>p{
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 12px;
+	color:#fff;
+}
+
+.payment-icons>img{
+	height:25px;
+}
+
+.editorial-img-box{
+	border-radius: 10px;
+    overflow: hidden;
+	display: block;
+}
+.editorial-img-box>img{
+	transform: scale(1);
+	transition: 1s ease-out;
+}
+.editorial-img-box:hover>img{
+	transform: scale(1.08);
+}
+.editorial-img-box1{
+	display: block;
+	width:100%;
+	height:100%;
+	border-radius: 10px;
+	overflow: hidden;
+	/* background-color:#ccc; */
+	background-image:url(../img/editorial-mg.webp);
+	background-size: cover;
+	transition: 1s ease-out;
+}
+
+.row-gap-20{
+	row-gap: 20px;
+}
+
+@media (max-width:768px){
+	.footer-column-header{
+		font-size: 13px;
+	}
+	.footer-menu>.footer-nav>a, .footer-para{
+		font-size: 12px;
+	}
+	.category-video-item {
+        max-width: 150px;
+    }
+	.home-special-collection-name{
+		font-size: 13px;
+	}
+	.sm-mb-2{
+		margin-bottom: .5rem;
+	}
+	.home-special-collection-img-box{
+		width: 60%;
+	}
+	.res-mt{
+		margin-top: 100px;
+	}
+
+	.filter-sidebar {
+        position: fixed;
+        z-index: 9;
+        top: 0;
+        width: 100%;
+        left: -1200px;
+		transition: 0.6s;
+    }
+
+	.filter-sidebar.show {
+        left: 0px;
+    }
+
+}
